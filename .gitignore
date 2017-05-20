@@ -1,1 +1,3 @@
 src/pp/homework/
+out/
+*.log
