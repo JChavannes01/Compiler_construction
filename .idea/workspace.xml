@@ -2,82 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096a4001-5a79-4223-9be0-aa24fabeb487" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_3/CheckGrammarRules.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_3/G0.g4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_3/G0Usage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_3/G0_fff.g4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_4/BinTreeListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_4/BinTreeTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_4/Tree.g4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_5/Birth.g4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_5/BirthChecker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_5/BirthSymbolTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_5/bible.birth" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_5/correct.birth" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_5/wrong.birth" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pp/s1477412/q1_5/wrong2.birth" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/Tree.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/TreeBaseListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/TreeBaseVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/TreeLexer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/TreeLexer.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/TreeListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/TreeParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_4/TreeVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/Birth.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/BirthBaseListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/BirthBaseVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/BirthLexer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/BirthLexer.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/BirthListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/BirthParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/pp/homework/q1_5/BirthVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/BinTreeListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/BinTreeTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/Tree.g4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/Tree.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeBaseListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeBaseVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeLexer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeLexer.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeParser$BinNodeContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeParser$LeftNodeContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeParser$NodeContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeParser$NumNodeContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeParser$RightNodeContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeParser$TopContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_4/TreeVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/Birth.g4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/Birth.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthBaseListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthBaseVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthChecker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthLexer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthLexer.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthParser$BegetContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthParser$BranchBegetContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthParser$BranchContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthParser$ChildBegetContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthParser$EnterContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthParser$SexContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/BirthVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/MySymbolTable$Gender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/MySymbolTable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/bible.birth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/correct.birth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/wrong.birth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Compiler_construction/pp/homework/q1_5/wrong2.birth" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Compiler_construction.iml" afterPath="$PROJECT_DIR$/Compiler_construction.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/antlr4-4.7/tool-testsuite/test/org/antlr/v4/test/tool/TestCompositeGrammars.java" afterPath="$PROJECT_DIR$/antlr4-4.7/tool-testsuite/test/org/antlr/v4/test/tool/TestCompositeGrammars.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pp/block4/cc/iloc/Calc.g4" afterPath="$PROJECT_DIR$/src/pp/block4/cc/iloc/Calc.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pp/block4/cc/iloc/CalcCompiler.java" afterPath="$PROJECT_DIR$/src/pp/block4/cc/iloc/CalcCompiler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pp/block4/cc/test/FindTest.java" afterPath="$PROJECT_DIR$/src/pp/block4/cc/test/FindTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pp/slides/cc5/Calc.tokens" afterPath="$PROJECT_DIR$/src/pp/slides/cc5/Calc.tokens" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pp/slides/cc5/CalcLexer.tokens" afterPath="$PROJECT_DIR$/src/pp/slides/cc5/CalcLexer.tokens" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -288,26 +215,8 @@
               <option name="myItemId" value="pp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Compiler_construction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Compiler_construction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="s1477412" />
+              <option name="myItemId" value="cc5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,40 +235,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="s1477412" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="q1_3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Compiler_construction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Compiler_construction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="s1477412" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="q1_2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -801,8 +676,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -825,7 +700,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4852459" sideWeight="0.48711064" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.49785176" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20300752" sideWeight="0.486911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20300752" sideWeight="0.486911" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.116004296" sideWeight="0.513089" order="6" side_tool="true" content_ui="tabs" />
