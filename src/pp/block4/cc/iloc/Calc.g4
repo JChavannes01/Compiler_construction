@@ -1,6 +1,6 @@
 grammar Calc;
 
-@header{package pp.block4.cc.iloc;}
+//@header{package pp.block4.cc.iloc;}
 
 /** Complete expression. */
 complete

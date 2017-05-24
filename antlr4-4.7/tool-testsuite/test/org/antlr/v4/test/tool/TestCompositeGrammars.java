@@ -391,7 +391,7 @@ public class TestCompositeGrammars extends BaseJavaToolTest {
 			"a: T1;\n" +
 			"b: T2;\n" ;
 		BaseRuntimeTest.mkdir(tmpdir);
-		writeFile(tmpdir, "G1.g4", gstr);
+		writeFile(tmpdir, "G0.g4", gstr);
 
 		gstr =
 			"parser grammar G2;\n" +

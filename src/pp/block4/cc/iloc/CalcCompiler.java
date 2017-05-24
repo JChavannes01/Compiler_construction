@@ -7,19 +7,19 @@ import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
+import org.antlr.v4.runtime.tree.ParseTreeProperty;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import pp.block4.cc.ErrorListener;
-import pp.block4.cc.iloc.CalcParser.CompleteContext;
 import pp.iloc.Simulator;
-import pp.iloc.model.Op;
-import pp.iloc.model.OpCode;
-import pp.iloc.model.Operand;
-import pp.iloc.model.Program;
+import pp.iloc.model.*;
 
 /** Compiler from Calc.g4 to ILOC. */
 public class CalcCompiler extends CalcBaseListener {
 	/** Program under construction. */
 	private Program prog;
 	// Attribute maps and other fields
+	private int register_count;
+	private ParseTreeProperty<Reg> register_names;
 
 	/** Compiles a given expression string into an ILOC program. */
 	public Program compile(String text) {
@@ -47,11 +47,75 @@ public class CalcCompiler extends CalcBaseListener {
 
 	/** Compiles a given Calc-parse tree into an ILOC program. */
 	public Program compile(ParseTree tree) {
-		// TODO Fill in
-		throw new UnsupportedOperationException("Fill in");
+		this.prog = new Program();
+		this.register_count = 0;
+		this.register_names = new ParseTreeProperty<>();
+
+		new ParseTreeWalker().walk(this, tree);
+		System.out.println(prog.prettyPrint());
+		return prog;
 	}
 
-	/** Constructs an operation from the parameters 
+	@Override
+	public void exitComplete(CalcParser.CompleteContext ctx) {
+		Reg reg = register_names.get(ctx.expr());
+		Str str = new Str("Outcome: ");
+		emit(OpCode.out, str, reg);
+	}
+
+	@Override
+	public void exitTimes(CalcParser.TimesContext ctx) {
+		Reg reg = new Reg("r_" + register_count);
+		Reg reg1 = register_names.get(ctx.expr(0));
+		Reg reg2 = register_names.get(ctx.expr(1));
+
+		emit(OpCode.mult, reg1, reg2, reg);
+		register_names.put(ctx, reg);
+		register_count++;
+	}
+
+	@Override
+	public void exitMinus(CalcParser.MinusContext ctx) {
+		Reg reg = new Reg("r_" + register_count);
+		Reg reg1 = register_names.get(ctx.expr());
+		Num num = new Num(0);
+
+		emit(OpCode.rsubI, reg1, num, reg);
+		register_names.put(ctx, reg);
+		register_count++;
+	}
+
+	@Override
+	public void exitPlus(CalcParser.PlusContext ctx) {
+		Reg reg = new Reg("r_" + register_count);
+		Reg reg1 = register_names.get(ctx.expr(0));
+		Reg reg2 = register_names.get(ctx.expr(1));
+
+		emit(OpCode.add, reg1, reg2, reg);
+		register_names.put(ctx, reg);
+		register_count++;
+	}
+
+	@Override
+	public void exitPar(CalcParser.ParContext ctx) {
+		Reg child = register_names.get(ctx.expr());
+		register_names.put(ctx, child);
+	}
+
+	@Override
+	public void exitNumber(CalcParser.NumberContext ctx) {
+		Reg reg = new Reg("r_" + register_count);
+
+		int val = Integer.parseInt(ctx.NUMBER().getText());
+		System.out.println("val = " + val);
+		Num num = new Num(val);
+
+		emit(OpCode.loadI, num, reg);
+		register_names.put(ctx, reg);
+		register_count++;
+	}
+
+	/** Constructs an operation from the parameters
 	 * and adds it to the program under construction. */
 	private void emit(OpCode opCode, Operand... args) {
 		this.prog.addInstr(new Op(opCode, args));

@@ -18,12 +18,12 @@ import pp.iloc.parse.FormatException;
 @SuppressWarnings("javadoc")
 public class FindTest {
 	private Assembler assembler = Assembler.instance();
-	private final static boolean SHOW = true;
+	private final static boolean SHOW = false;
 
 	@Test
 	//(timeout = 1000)
 	public void simulate() {
-		Program p = assemble("pp/block4/cc/iloc/find");
+		Program p = assemble("src/pp/block4/cc/iloc/find");
 		if (SHOW) {
 			System.out.println(p.prettyPrint());
 		}

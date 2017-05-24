@@ -1,0 +1,23 @@
+// in grammar.
+
+start:  loadI @alength      => r_len
+        in "Search for?"    => r_x
+        loadI 0             => r_i
+
+for:    cmp_LT r_i, r_len   => r_cmp
+        cbr r_cmp           -> body, end
+
+body:   i2i r_i             => r_a
+        multI r_a, 4        => r_a
+        addI r_a, @a        => r_a
+        loadAO r_arp, r_a   => r_ai
+
+        cmp_EQ r_ai, r_x    => r_cmpif
+        cbr r_cmpif         -> then, endif
+
+then:   jumpI               -> end
+
+endif:  addI r_i, 1         => r_i
+        jumpI               -> for
+
+end:    out "Index: ", r_i

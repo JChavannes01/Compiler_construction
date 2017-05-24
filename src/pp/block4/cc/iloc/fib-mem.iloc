@@ -1,0 +1,23 @@
+// Memory-to-memory
+while:  loadAI r_arp, @n    => r_n
+        loadAI r_arp, @z    => r_z
+        loadI 1             => r_min
+
+        cmp_GT r_n, r_min   => r_cmp
+        cbr r_cmp           -> body, end
+
+body:   loadAI r_arp, @x     => r_x
+        loadAI r_arp, @y     => r_y
+        loadAI r_arp, @z     => r_z
+
+        add r_x, r_y        => r_z
+        storeAI r_z         => r_arp, @z
+        storeAI r_y         => r_arp, @x
+        storeAI r_z         => r_arp, @y
+
+        loadAI r_arp, @n    => r_n
+        subI r_n, 1         => r_n
+        storeAI r_n         => r_arp, @n
+        jumpI               -> while
+
+end:    out "result: ", r_z
