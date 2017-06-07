@@ -2,5 +2,7 @@ src/pp/homework/
 src/pp/s1477412/
 out/
 gen/
+JAR/
+antlr4-4.7/
+.idea/vcs.xml
 *.log
-.idea/
