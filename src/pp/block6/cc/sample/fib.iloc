@@ -1,0 +1,43 @@
+start:      in "Argument?"  => r_arg
+            loadI #end      => r_ret_addr
+            loadI 1         => r_min            // min value for fib condition
+            push r_ret_addr
+            push r_arg
+
+fib_start:  pop             => r_arg_local
+            push r_arg_local                    // Save old value of register (Callee saves)
+            cmp_LE r_arg_local, r_min   => r_cmp
+            cbr r_cmp       -> fib_then, fib_n2
+
+fib_then:   pop             => r_null           // don't need arg, no recursive calls from then
+            pop             => r_ret_addr
+            loadI 1         => r_res
+            push r_res
+            jump            -> r_ret_addr
+
+fib_else:   pop             => r_n1             // calculate fib(n-2) + fib(n-1)
+            pop             => r_n2
+            add r_n2, r_n1  => r_res
+            pop             => r_ret_addr
+            push r_res
+            jump            -> r_ret_addr
+
+fib_n2:     pop                 => r_arg_local  // prepare execution fib(n-2)
+            push r_arg_local
+            subI r_arg_local, 2 => r_arg_local
+            loadI #fib_n1       => r_ret_addr
+            push r_ret_addr
+            push r_arg_local
+            jumpI               -> fib_start    // execute fib(n-2)
+
+fib_n1:     pop                 => r_res        // prepare execution fib(n-1)
+            pop                 => r_arg_local
+            loadI #fib_else     => r_ret_addr
+            subI r_arg_local, 1 => r_arg_local
+            push r_res
+            push r_ret_addr
+            push r_arg_local                    // reorder stack,
+            jumpI               -> fib_start    // execute fib(n-1)
+
+end:        pop                 => r_res
+            out "Result: ", r_res
